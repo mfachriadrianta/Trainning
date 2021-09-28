@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args) throws IOException{
+    public static void main(String[] args){
 
 //        int a = 115;
 //
@@ -24,18 +24,26 @@ public class Main {
 
 //       int a = 1;
 //       System.out.printf("%d to %d", a, +a);
-
-        int b = 0;
-        for(int i = 0; i <= 9; i++){
-            if (b < 20){
-                b++;
-            }
-        }
-        System.out.printf("%d", b);
-        boolean next = true;
-//        while(next){
+//
+//        int b = 0;
+//        for(int i = 0; i <= 9; i++){
+//            b++;
 //        }
-    }
+//        System.out.printf("%d", b);
 
+//        boolean next = true;
+////        while(next){
+////        }
+
+        // Operator unary
+//        int a = 1;
+//        System.out.printf("%d = %d",a,-a);
+
+//        Integer a = 3;
+//        --a;
+//        System.out.printf("%d = %d", a, a);
+
+
+    }
 
 }
