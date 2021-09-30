@@ -43,7 +43,14 @@ public class Main {
 //        --a;
 //        System.out.printf("%d = %d", a, a);
 
-
+        // While
+        Scanner input = new Scanner(System.in);
+        Integer inputUser = input.nextInt();
+        String a;
+        a = "fachri";
+        System.out.println("What do you want to enter?" + inputUser);
+        while (inputUser == 1){
+            System.out.println(a);
+        }
     }
-
 }
