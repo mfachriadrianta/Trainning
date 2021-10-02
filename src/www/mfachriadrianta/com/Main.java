@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException{
 
 //        int a = 115;
 //
@@ -50,12 +50,28 @@ public class Main {
         boolean next = true;
         String a;
         a = "fachri";
-        if (inputUser.equals(1)){
-            while (next){
-            System.out.println(a);
-        }
+        while (next){
+            if (inputUser.equals(Integer.parseInt("1"))){
+                System.out.println(a);
         } else {
-            next = false;
+                a = "nothing";
+                System.out.println(a);
+            }
+            next = getMessage("What do you want enter?");
         }
+    }
+
+    public static boolean getMessage(String message){
+        Scanner returnMessage = new Scanner(System.in);
+        System.out.print(message);
+        Integer repeatinputUser = returnMessage.nextInt();
+
+        if (!repeatinputUser.equals(1)){
+            System.err.println("Your choice only 1");
+            System.out.print(message);
+            repeatinputUser = returnMessage.nextInt();
+        }
+
+        return repeatinputUser.equals(1);
     }
 }
