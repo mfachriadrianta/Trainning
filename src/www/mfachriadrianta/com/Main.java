@@ -44,13 +44,18 @@ public class Main {
 //        System.out.printf("%d = %d", a, a);
 
         // While
+        System.out.print("What do you want to enter?");
         Scanner input = new Scanner(System.in);
         Integer inputUser = input.nextInt();
+        boolean next = true;
         String a;
         a = "fachri";
-        System.out.println("What do you want to enter?" + inputUser);
-        while (inputUser == 1){
+        if (inputUser.equals(1)){
+            while (next){
             System.out.println(a);
+        }
+        } else {
+            next = false;
         }
     }
 }
